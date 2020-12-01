@@ -40,31 +40,24 @@ def predict():
         output = 'SPAM'
     else:
         output = 'NOT SPAM, Mail sent'
-
     
-
-    
-    server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-    sender = 'harveysuit378@gmail.com'
-    receiver = request.form["to"]
-    
-    #message = subject + " " + body
-    
-    message = '\r\n'.join(['To: %s' % receiver,
-        'From: %s' % sender,
-        'Subject: %s' % subject,
-        '', body])
-    
-    
-              
-                
-  
-    
-    server.login(sender, 'bond00711')
-    server.sendmail(sender, receiver, message)
-    
-    server.quit()
-    
+        server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+        sender = 'harveysuit378@gmail.com'
+        receiver = request.form["to"]
+        
+        #message = subject + " " + body
+        
+        message = '\r\n'.join(['To: %s' % receiver,
+            'From: %s' % sender,
+            'Subject: %s' % subject,
+            '', body])
+        
+        
+        server.login(sender, 'bond00711')
+        server.sendmail(sender, receiver, message)
+        
+        server.quit()
+        
 
     return render_template('index.html', prediction_text='Your mail is a {}'.format(output))
 
