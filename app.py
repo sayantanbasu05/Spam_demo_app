@@ -53,7 +53,7 @@ def predict():
             '', body])
         
         
-        server.login(sender, '')
+        server.login(sender, 'bond00711')
         server.sendmail(sender, receiver, message)
         
         server.quit()
