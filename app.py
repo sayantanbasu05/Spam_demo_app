@@ -21,7 +21,7 @@ countvec = pickle.load(open('countvec.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
-@app.route('https://spam-app-detector.herokuapp.com/predict',methods=['POST'])
+@app.route('/predict',methods=['POST'])
 def predict():
     '''
     For rendering results on HTML GUI
