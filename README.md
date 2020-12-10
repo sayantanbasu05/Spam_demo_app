@@ -13,4 +13,4 @@ Both the datasets have been taken from Kaggle. The link to the datasets are give
 ## App link
 This demo app has been deployed in Heroku.
 
-Link to the app: https://spam-app-detector.herokuapp.com/
+[Link to the app](https://spam-app-detector.herokuapp.com/)
