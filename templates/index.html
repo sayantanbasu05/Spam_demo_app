@@ -26,10 +26,14 @@
 
    <br>
    <br>
-   {{ prediction_text }}
+   <h2>{{ prediction_text }}</h2>
 
  </div>
 
+<h1> Details of the prediction</h1><br>
+Spam confidence by the model : {{ spam_score }}<br>
+Non-Spam confidence by the model : {{ non_spam_score }}<br>
+Words with scores : {{ results}} <br>
 
 </body>
 </html>
