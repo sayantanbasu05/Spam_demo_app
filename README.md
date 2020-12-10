@@ -8,7 +8,7 @@ Both the datasets have been taken from Kaggle. The link to the datasets are give
 
 [emails.csv](https://www.kaggle.com/karthickveerakumar/spam-filter)
 
-[spam_ham_dataset](https://www.kaggle.com/venky73/spam-mails-dataset)
+[spam_ham_dataset.csv](https://www.kaggle.com/venky73/spam-mails-dataset)
 
 ## App link
 This demo app has been deployed in Heroku.
